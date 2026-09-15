@@ -1,0 +1,18 @@
+EJERCICIO 46 - Explicación del error
+=====================================
+
+El compilador marca algo como:
+
+    error: <identifier> expected
+    public class {
+                 ^
+
+La palabra reservada "class" siempre debe ir seguida de un identificador
+válido que le dé nombre al tipo que se está definiendo. En el ejemplo
+errado se escribió "public class {" y se saltó directamente a la llave
+de apertura, sin indicar cómo se llama la clase. El compilador espera
+un identificador justo después de "class" y, al encontrar el símbolo
+"{" en su lugar, reporta que faltó el nombre. Además, como no hay
+nombre de clase, el compilador tampoco puede relacionar el constructor
+"Vehiculo(String marca)" con la clase que se está declarando, y esto
+generaría errores adicionales de sintaxis.
