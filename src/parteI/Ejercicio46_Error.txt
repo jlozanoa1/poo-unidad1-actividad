@@ -1,0 +1,14 @@
+// EJEMPLO ERRADO (archivo Vehiculo.java)
+// Falta el identificador (nombre) de la clase después de la palabra "class".
+
+public class {
+    private String marca;
+
+    public Vehiculo(String marca) {
+        this.marca = marca;
+    }
+
+    public void mostrarMarca() {
+        System.out.println("Marca: " + this.marca);
+    }
+}

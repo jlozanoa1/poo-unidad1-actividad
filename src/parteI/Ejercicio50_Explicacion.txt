@@ -1,0 +1,21 @@
+EJERCICIO 50 - Explicación del error
+=====================================
+
+Este caso es distinto a los anteriores: el código SÍ compila sin
+errores, porque la clase Gato está bien definida sintácticamente y
+main() es un programa válido. No hay ningún mensaje de
+"error" del compilador javac.
+
+Sin embargo, algunos entornos de desarrollo (IDEs como IntelliJ o
+Eclipse) sí muestran una advertencia (warning), del estilo:
+
+    warning: class Gato is never used / never instantiated
+
+Esto muestra un error de diseño, no de sintaxis: se definió
+cuidadosamente la clase Gato con su atributo y su método maullar(),
+pero nunca se ejecutó "new Gato(...)" dentro de main(). Como
+consecuencia, todo ese código queda "muerto": nunca se ejecuta ni
+aporta nada al comportamiento del programa. Es un recordatorio de que
+declarar una clase no basta; para que sus objetos existan y hagan algo
+en tiempo de ejecución, es necesario instanciarla explícitamente con
+"new" y usar la referencia resultante.

@@ -1,0 +1,14 @@
+// EJEMPLO ERRADO
+// El método mostrarInfo() quedó fuera de las llaves de la clase Animal.
+
+public class Animal {
+    private String nombre;
+
+    public Animal(String nombre) {
+        this.nombre = nombre;
+    }
+} // <- la clase se cierra aquí por error
+
+public void mostrarInfo() {
+    System.out.println("Nombre: " + this.nombre);
+}

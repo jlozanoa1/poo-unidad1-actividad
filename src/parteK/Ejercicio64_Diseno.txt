@@ -1,0 +1,16 @@
+EJERCICIO 64 - Diseño previo: Tienda
+=====================================
+
+Atributos:
+- nombre
+- direccion
+- ventasTotales
+
+Métodos:
+- registrarVenta(double monto)
+- mostrarTienda()
+
+Objetos reales que podrían construirse:
+- Una tienda de barrio pequeña con ventas diarias bajas.
+- Una tienda de ropa en un centro comercial con ventas mayores.
+- Una tienda en línea (e-commerce) sin dirección física fija.

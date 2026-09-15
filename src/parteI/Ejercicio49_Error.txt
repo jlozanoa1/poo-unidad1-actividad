@@ -1,0 +1,21 @@
+// EJEMPLO ERRADO
+
+public class Persona {
+    private String nombre;
+
+    public Persona(String nombre) {
+        this.nombre = nombre;
+    }
+}
+
+public class Ejercicio49Error {
+    public static void main(String[] args) {
+        Persona persona1 = new Persona("Ana");
+        Persona persona2 = new Persona("Luis");
+
+        // Se intenta acceder al atributo privado "nombre" de otro objeto
+        // directamente desde fuera de la clase Persona.
+        System.out.println(persona1.nombre);
+        System.out.println(persona2.nombre);
+    }
+}

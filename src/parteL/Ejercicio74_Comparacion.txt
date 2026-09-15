@@ -1,0 +1,34 @@
+EJERCICIO 74 - Comparación de las tres formas de construcción de objetos
+==========================================================================
+
+A lo largo de todo el taller se usaron tres formas de construir objetos:
+
+1. Constructor vacío + setters: se crea el objeto sin datos y luego se
+   asigna cada atributo con métodos separados (setNombre(), setEdad(),
+   etc.). Es la forma más parecida a la programación estructurada, ya
+   que separa "crear" de "llenar de datos", y por eso corre el riesgo
+   de dejar un objeto a medio construir si se olvida llamar a algún
+   setter.
+
+2. Constructor con parámetros: todos los datos obligatorios se reciben
+   de una sola vez en el momento de crear el objeto (new Auto("Mazda",
+   "Rojo", 210)). Esto garantiza que el objeto nazca siempre completo
+   y consistente, y reduce la cantidad de líneas de código necesarias
+   para inicializarlo.
+
+3. Constructor copia: recibe otro objeto de la misma clase y copia sus
+   valores en el nuevo objeto (new Mascota(original)). Es útil cuando
+   ya se tiene un objeto de referencia y se quiere duplicar su estado
+   sin escribir de nuevo cada atributo a mano.
+
+Para un principiante, el constructor con parámetros resulta el más
+claro y el más fácil de entender: obliga a pensar, desde el principio,
+en cuáles son los datos mínimos que necesita un objeto para existir de
+forma completa, y la relación entre lo que se escribe en "new Clase(...)"
+y lo que aparece dentro del constructor es directa e intuitiva. El
+constructor vacío con setters, aunque también es sencillo, tiende a
+confundir a quien empieza porque separa la creación del llenado de
+datos, y el constructor copia, si bien es muy útil, requiere entender
+primero cómo funciona un constructor con parámetros (ya que normalmente
+se apoya en él), por lo que conceptualmente es un paso posterior en el
+aprendizaje.

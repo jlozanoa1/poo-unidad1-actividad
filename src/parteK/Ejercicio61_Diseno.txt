@@ -1,0 +1,21 @@
+EJERCICIO 61 - Diseño previo: Docente
+======================================
+
+Atributos:
+- nombre
+- especialidad
+- añosExperiencia
+- disponible
+
+Métodos:
+- asignarCurso()
+- marcarNoDisponible()
+- marcarDisponible()
+- mostrarDocente()
+
+Objetos reales que podrían construirse:
+- Un docente de matemáticas con 10 años de experiencia, disponible.
+- Un docente de historia con 3 años de experiencia, no disponible por
+  estar dictando otra clase.
+- Un docente de inglés recién contratado, con 0 años de experiencia
+  en la institución.

@@ -1,0 +1,17 @@
+EJERCICIO 45 - Explicación del error
+=====================================
+
+El compilador marca algo como:
+
+    error: class, interface, or enum expected
+    public void mostrarInfo() {
+                  ^
+
+Esto ocurre porque la llave de cierre '}' de la clase Animal se colocó
+inmediatamente después del constructor, dejando el método mostrarInfo()
+fuera del cuerpo de la clase, a nivel de archivo. En Java, todo método
+debe estar declarado dentro del cuerpo de una clase o interfaz; un método "suelto"
+en el archivo no es una construcción válida del lenguaje, por lo que el
+compilador espera encontrar allí una nueva declaración de clase,
+interfaz o enum, y en su lugar encuentra la palabra reservada "public"
+seguida de un tipo de retorno, lo que no es válido en ese contexto.

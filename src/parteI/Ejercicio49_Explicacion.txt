@@ -1,0 +1,19 @@
+EJERCICIO 49 - Explicación del error
+=====================================
+
+El compilador marca algo como:
+
+    error: nombre has private access in Persona
+    System.out.println(persona1.nombre);
+                                 ^
+
+El atributo "nombre" está declarado como "private", lo que significa
+que solo el código escrito DENTRO de la clase Persona puede acceder a
+él directamente. La clase Ejercicio49Error es un tipo distinto, así
+que, aunque tenga en sus manos una referencia válida a un objeto
+Persona (persona1, persona2), no tiene permiso para leer su atributo
+privado con la sintaxis "persona1.nombre". Este el justamente el
+propósito del encapsulamiento: obligar a que el acceso a los atributos
+se haga a través de métodos públicos (getters) definidos por la propia
+clase, en vez de exponer sus datos internos directamente a cualquier
+otro objeto.

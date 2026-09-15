@@ -1,0 +1,17 @@
+EJERCICIO 47 - Explicación del error
+=====================================
+
+El compilador marca algo como:
+
+    error: variable perro might not have been initialized
+    perro.ladrar();
+    ^
+
+En Java, declarar una variable de tipo referencia ("Perro perro;") solo
+reserva un nombre para guardar, en el futuro, la dirección de un
+objeto; no crea ningún objeto Perro en memoria. Si se intenta invocar
+un método sobre esa variable antes de asignarle un objeto con "new
+Perro(...)", el compilador detecta que la variable podría no haberse
+inicializado y detiene la compilación. En cualquiera
+de los dos casos, la causa es la misma: se intenta usar un objeto
+que nunca fue construido con "new".
