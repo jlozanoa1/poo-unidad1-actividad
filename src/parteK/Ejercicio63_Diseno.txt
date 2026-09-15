@@ -1,0 +1,17 @@
+EJERCICIO 63 - Diseño previo: Hospital
+=======================================
+
+Atributos:
+- nombre
+- ciudad
+- camasDisponibles
+
+Métodos:
+- ocuparCama()
+- liberarCama()
+- mostrarHospital()
+
+Objetos reales que podrían construirse:
+- Un hospital universitario grande, con cientos de camas disponibles.
+- Una clínica de un pequeño municipio, con solo 15 camas.
+- Un hospital de campaña temporal montado tras una emergencia.
