@@ -1,0 +1,22 @@
+EJERCICIO 48 - Explicación del error
+=====================================
+
+Sobre la línea "double radio = radio;" el compilador marca algo como:
+
+    error: variable radio might not have been initialized
+    double radio = radio;
+                   ^
+
+Esto pasa porque, dentro del constructor, "double radio = radio;"
+declara una NUEVA variable local llamada radio que oculta (hace
+"shadowing") al parámetro radio del constructor, e intenta
+inicializarse leyendo su propio valor antes de haberlo asignado, lo
+que el compilador no permite.
+
+Por otro lado, en el método cambiarRadio(double radio), aunque el
+código sí compila, tiene un error de lógica: dentro del método se usa
+la variable local "radio" (el parámetro) para calcular "area", pero
+nunca se asigna ese valor al atributo de la clase "this.radio". El
+programador confundió el parámetro/variable local del método con el
+atributo del objeto, así que el radio real del círculo nunca cambia,
+aunque el método se llame "cambiarRadio".

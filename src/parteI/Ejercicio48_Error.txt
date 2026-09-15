@@ -1,0 +1,19 @@
+// EJEMPLO ERRADO
+
+public class Circulo {
+    private double radio;
+
+    public Circulo(double radio) {
+        double radio = radio; // se vuelve a declarar como variable local
+        this.radio = radio;
+    }
+
+    public void cambiarRadio(double radio) {
+        double area = 3.1416 * radio * radio; // aquí "radio" es el parámetro, no this.radio
+        // el atributo this.radio nunca se actualiza
+    }
+
+    public void mostrarRadio() {
+        System.out.println("Radio: " + this.radio);
+    }
+}
