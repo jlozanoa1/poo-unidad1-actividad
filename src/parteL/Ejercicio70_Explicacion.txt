@@ -1,0 +1,37 @@
+EJERCICIO 70 - Explicación de las clases y sus objetos
+========================================================
+
+1. Clase Semestre (contexto académico)
+---------------------------------------
+Atributos: numero, creditosMatriculados, promedioAcumulado, enCurso.
+Comportamientos: finalizar() (marca el semestre como terminado),
+actualizarPromedio(double) (cambia el promedio acumulado) y
+mostrarSemestre() (imprime el estado actual).
+Objetos creados: semestre1 a semestre5, representando los primeros
+cinco semestres de una carrera, cada uno con distinta cantidad de
+créditos, promedio y estado (en curso o finalizado).
+
+2. Clase RutinaDiaria (vida cotidiana)
+----------------------------------------
+Atributos: actividad, horaInicio, duracionMinutos, completada.
+Comportamientos: marcarCompletada() (cambia el estado de la
+actividad) y mostrarActividad() (imprime los datos de la actividad).
+Objetos creados: rutina1 a rutina5, representando actividades típicas
+de un día (levantarse, desayunar, ir a clases, estudiar y dormir),
+cada una con su propia hora de inicio y duración.
+
+3. Clase PedidoRestaurante (negocio)
+----------------------------------------
+Atributos: plato, cantidad, precioUnitario, entregado.
+Comportamientos: calcularTotal() (multiplica cantidad por precio
+unitario) y marcarEntregado() (cambia el estado del pedido); además
+mostrarPedido() para ver el resultado.
+Objetos creados: pedido1 a pedido5, representando distintos pedidos
+de clientes de un restaurante (bandeja paisa, ajiaco, sancocho,
+ensalada y jugo natural), cada uno con su propia cantidad y precio.
+
+En los tres casos se observa el mismo patrón: la clase define la
+estructura común (qué datos guarda y qué puede hacer un objeto de ese
+tipo), mientras que cada objeto es una instancia particular con sus
+propios valores, independiente de las demás instancias de la misma
+clase.
