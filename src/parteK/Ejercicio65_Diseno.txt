@@ -1,0 +1,18 @@
+EJERCICIO 65 - Diseño previo: EquipoDeFutbol
+=============================================
+
+Atributos:
+- nombre
+- ciudad
+- jugadores (cantidad de jugadores inscritos)
+- puntos
+
+Métodos:
+- sumarPuntosPorVictoria()
+- sumarPuntoPorEmpate()
+- mostrarEquipo()
+
+Objetos reales que podrían construirse:
+- Un equipo profesional de primera división con 25 jugadores.
+- Un equipo amateur de barrio con 15 jugadores.
+- Un equipo juvenil de una escuela de formación deportiva.
