@@ -1,0 +1,20 @@
+// EJEMPLO ERRADO
+
+public class Gato {
+    private String nombre;
+
+    public Gato(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void maullar() {
+        System.out.println(this.nombre + " dice: ¡Miau!");
+    }
+}
+
+public class Ejercicio50Error {
+    public static void main(String[] args) {
+        // La clase Gato está bien definida, pero nunca se construye un objeto.
+        System.out.println("Programa iniciado, pero ningún gato maulló.");
+    }
+}
