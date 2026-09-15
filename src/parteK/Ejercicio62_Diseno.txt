@@ -1,0 +1,18 @@
+EJERCICIO 62 - Diseño previo: Biblioteca
+=========================================
+
+Atributos:
+- nombre
+- direccion
+- librosDisponibles
+
+Métodos:
+- prestarLibro()
+- devolverLibro()
+- mostrarBiblioteca()
+
+Objetos reales que podrían construirse:
+- La biblioteca central de una universidad, con miles de libros
+  disponibles.
+- Una biblioteca pública municipal pequeña, con pocos ejemplares.
+- Una biblioteca escolar con un catálogo limitado a libros de texto.
