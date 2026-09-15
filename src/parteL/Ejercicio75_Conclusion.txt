@@ -1,0 +1,58 @@
+EJERCICIO 75 - Conclusión final
+================================
+
+A lo largo de todo este taller se trabajó, de principio a fin, con los
+conceptos fundamentales de la programación orientada a objetos en
+Java: la clase, el objeto, la instanciación y el papel que estas ideas
+cumplen dentro del lenguaje.
+
+Una clase es una plantilla o un plano que describe, de una forma abstracta,
+qué información puede almacenar un conjunto de elementos parecidos
+(sus atributos) y qué comportamientos pueden tener (sus métodos). La
+clase en sí misma no representa ningún elemento concreto del mundo
+real: cuando se escribe "public class Estudiante { ... }" no se está
+creando ningún estudiante en particular, sino definiendo la forma que
+tendrá cualquier estudiante que se quiera representar dentro del
+programa. Es, en este sentido, comparable al plano de una casa: el
+plano no es habitable, pero describe con precisión cómo debe
+construirse cualquier casa basada en él.
+
+Un objeto, por su parte, es una instancia concreta de esa clase: una
+"copia" construida a partir del plano, con sus propios valores
+almacenados en su propia posición de memoria. Dos objetos de la misma
+clase, como dos estudiantes distintos, comparten la misma estructura
+(ambos tienen nombre, código y semestre), pero cada uno guarda datos
+independientes, y modificar uno no afecta al otro. Esto es justamente
+lo que se evidenció en los ejercicios de "varios objetos de la misma
+clase": el comportamiento definido es el mismo, pero el estado es
+particular de cada instancia.
+
+Instanciar significa, precisamente, el acto de construir uno de esos
+objetos a partir de la clase, típicamente a través de la palabra reservada
+"new" seguida de una llamada a un constructor: "new Estudiante(...)".
+Antes de ejecutar esa instrucción, solo existe la definición de la
+clase en el código fuente; después de ejecutarla, existe en memoria un
+objeto real, con un espacio propio, que puede ser referenciado,
+modificado y utilizado a través de sus métodos. Los ejercicios de
+lectura y corrección de la Parte I mostraron, de manera práctica, qué
+sucede cuando se intenta usar un objeto sin haberlo instanciado: el
+programa no tiene sobre qué operar, porque la simple declaración de una
+variable de tipo referencia no crea, por sí sola, ningún objeto.
+
+Java utiliza las clases como base de la programación orientada a
+objetos porque este paradigma busca diseñar el software de una forma
+más cercana a cómo se piensa en el mundo real: en términos de "cosas" que
+tienen características y que pueden actuar o ser actuadas sobre ellas,
+no como una simple secuencia de instrucciones y variables sueltas
+como en la programación estructurada. Al organizar el código en
+clases, Java logra que los datos y el comportamiento que les
+corresponde viajen siempre juntos (encapsulamiento), que se puedan
+crear tantos objetos como se necesiten a partir de una sola definición
+(reutilización), y que el propio lenguaje exija una estructura clara
+para cualquier programa, porque en Java no puede existir código fuera
+de una clase. Esta forma de organizar el código escala mucho mejor que
+la programación estructurada a medida que los programas crecen en
+tamaño y complejidad, porque cada clase concentra la responsabilidad
+de una sola idea del dominio del problema, y los objetos son la
+manera concreta en que esas ideas cobran vida durante la ejecución del
+programa.
